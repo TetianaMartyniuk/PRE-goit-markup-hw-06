@@ -71,7 +71,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="hero-button" type="button" data-modal-open>
+          <button class="hero-button button" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -519,15 +519,92 @@
             </li>
           </ul>
         </div>
+        <!-- H W 6 -->
+        <div class="newsletter">
+          <p>Подпишитесь на рассылку</p>
+          <form
+            class="newsletter-form"
+            name="newsletter-form"
+            autocomplete="on"
+          >
+            <label>
+              <input
+                class="email-input"
+                name="email"
+                type="email"
+                placeholder="Email"
+                required
+              />
+            </label>
+            <button class="subscribe-btn button" type="submit">
+              Подписаться
+              <svg class="send-icon" width="24px" height="24px">
+                <use href="./images/icons/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <!-- H W 6 end -->
       </div>
     </footer>
     <div class="backdrope is-hidden" data-modal>
       <div class="modal-wrapper">
-        <button type="button" data-modal-close>
+        <button class="button-close" type="button" data-modal-close>
           <svg class="modal-close" width="18px" height="18px">
             <use href="./images/icons/symbol-defs.svg#close-btn"></use>
           </svg>
         </button>
+        <!-- H W 6 -->
+        <div class="form-wrapper">
+          <h2>Оставьте свои данные, мы вам перезвоним</h2>
+          <form class="modal-form">
+            <label name="user-name"
+              >Имя
+              <input
+                class="contacts-input form-border"
+                name="user-name"
+                type="text"
+                autofocus
+                required
+              />
+            </label>
+            <label
+              >Телефон
+              <input
+                class="contacts-input form-border"
+                name="tel"
+                type="tel"
+                required
+              />
+            </label>
+            <label
+              >Почта
+              <input
+                class="contacts-input form-border"
+                name="email"
+                type="email"
+              />
+            </label>
+            <label class="comment" name="comment"
+              >Комментарий
+              <textarea
+                class="comment-area form-border"
+                name="comment"
+                rows="5"
+                placeholder="Введите текст"
+                required
+              ></textarea>
+            </label>
+            <label class="conditions">
+              <input type="checkbox" required />
+              <p class="conditions-text">
+                Соглашаюсь с рассылкой и принимаю
+                <a class="conditions-link link" href="">Условия договора</a>
+              </p>
+            </label>
+          </form>
+          <button class="button form-btn" type="submit">Отправить</button>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
