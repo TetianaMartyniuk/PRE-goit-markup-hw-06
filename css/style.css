@@ -764,19 +764,42 @@ margin-right: 10px;
   width: 100%;
 }
 
-.modal-form label:not(:first-child){
+.modal-form label {
+  margin-top: 4px;
+}
+
+.modal-form p:not(:first-child) {
   margin-top: 10px;
 }
 
-.modal-form label:first-child {
+.modal-form p:first-child {
   margin-top: 12px;
 }
 
 .contacts-input {
   width: 100%;
   height: 40px;
-  margin-top: 4px;
+  /* margin-top: 4px; */
+  padding-left: 42px;
+  padding-right: 12px;
 }
+
+/* Иконки в input */
+.form-field {
+  position: relative;
+}
+
+
+.form-item {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translatey(-50%);
+}
+
+
 
 .form-border {
 border-radius: 4px;
@@ -785,9 +808,20 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 transition: border var(--anim-hover);
 }
 
-.form-border:hover,
-.form-border:focus {
+.form-field:hover .form-border, 
+.form-field:focus .form-border {
   border: 1px solid var(--accent-color);
+  /* outline: none; */
+}
+
+.form-field:hover .form-icon,
+.form-field:focus .form-icon {
+  fill: var(--accent-color);
+}
+
+
+.modal-form .comment {
+  margin-top: 10px;
 }
 
 .comment-area {
@@ -813,7 +847,16 @@ transition: border var(--anim-hover);
 }
 
 .conditions {
+  display: flex;
   margin-top: 20px;
+
+  position: relative;
+}
+
+.checkbox {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .conditions-link {
@@ -821,6 +864,15 @@ transition: border var(--anim-hover);
   color: var(--accent-color);
 }
 
+.conditions-text::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  background-color: transparent;
+  border: 1px solid var(--main-text-dark-color);
+  border-radius: 1px;
+
+}
 
 
 /* !! ПОРТФОЛИО !! */

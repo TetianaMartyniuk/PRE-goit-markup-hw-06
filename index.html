@@ -558,32 +558,50 @@
         <div class="form-wrapper">
           <h2>Оставьте свои данные, мы вам перезвоним</h2>
           <form class="modal-form">
-            <label name="user-name"
-              >Имя
+            <p>Имя</p>
+            <label class="form-field" name="name">
               <input
                 class="contacts-input form-border"
                 name="user-name"
                 type="text"
+                placeholder=" "
                 autofocus
                 required
               />
+              <span class="form-item">
+                <svg class="form-icon" width="18px" height="18px">
+                  <use href="./images/icons/symbol-defs.svg#person"></use>
+                </svg>
+              </span>
             </label>
-            <label
-              >Телефон
+            <p>Телефон</p>
+            <label class="form-field" name="tel">
               <input
                 class="contacts-input form-border"
                 name="tel"
                 type="tel"
+                placeholder=" "
                 required
               />
+              <span class="form-item">
+                <svg class="form-icon" width="18px" height="18px">
+                  <use href="./images/icons/symbol-defs.svg#phone"></use>
+                </svg>
+              </span>
             </label>
-            <label
-              >Почта
+            <p>Почта</p>
+            <label class="form-field" name="email">
               <input
                 class="contacts-input form-border"
                 name="email"
                 type="email"
+                placeholder=" "
               />
+              <span class="form-item">
+                <svg class="form-icon" width="18px" height="18px">
+                  <use href="./images/icons/symbol-defs.svg#email"></use>
+                </svg>
+              </span>
             </label>
             <label class="comment" name="comment"
               >Комментарий
