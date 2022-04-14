@@ -559,66 +559,85 @@
           <h2>Оставьте свои данные, мы вам перезвоним</h2>
           <form class="modal-form">
             <p>Имя</p>
-            <label class="form-field" name="name">
-              <input
-                class="contacts-input form-border"
-                name="user-name"
-                type="text"
-                placeholder=" "
-                autofocus
-                required
-              />
-              <span class="form-item">
-                <svg class="form-icon" width="18px" height="18px">
-                  <use href="./images/icons/symbol-defs.svg#person"></use>
-                </svg>
-              </span>
-            </label>
+            <div class="form-field">
+              <label name="name">
+                <input
+                  class="contacts-input input-border"
+                  name="user-name"
+                  type="text"
+                  placeholder=" "
+                  autofocus
+                  required
+                />
+              </label>
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/icons/symbol-defs.svg#person"></use>
+              </svg>
+            </div>
+
             <p>Телефон</p>
-            <label class="form-field" name="tel">
-              <input
-                class="contacts-input form-border"
-                name="tel"
-                type="tel"
-                placeholder=" "
-                required
-              />
-              <span class="form-item">
-                <svg class="form-icon" width="18px" height="18px">
-                  <use href="./images/icons/symbol-defs.svg#phone"></use>
-                </svg>
-              </span>
-            </label>
+            <div class="form-field">
+              <label class="form-field" name="tel">
+                <input
+                  class="contacts-input input-border"
+                  name="tel"
+                  type="tel"
+                  placeholder=" "
+                  required
+                  title="Введите номер телефона в формате: 380501234567"
+                />
+              </label>
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/icons/symbol-defs.svg#phone"></use>
+              </svg>
+            </div>
+
             <p>Почта</p>
-            <label class="form-field" name="email">
-              <input
-                class="contacts-input form-border"
-                name="email"
-                type="email"
-                placeholder=" "
-              />
-              <span class="form-item">
-                <svg class="form-icon" width="18px" height="18px">
-                  <use href="./images/icons/symbol-defs.svg#email"></use>
-                </svg>
-              </span>
-            </label>
+            <div class="form-field">
+              <label class="form-field" name="email">
+                <input
+                  class="contacts-input input-border"
+                  name="email"
+                  type="email"
+                  placeholder=" "
+                />
+              </label>
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/icons/symbol-defs.svg#email"></use>
+              </svg>
+            </div>
+
             <label class="comment" name="comment"
               >Комментарий
               <textarea
-                class="comment-area form-border"
+                class="comment-area input-border"
                 name="comment"
                 rows="5"
                 placeholder="Введите текст"
-                required
               ></textarea>
             </label>
+          </form>
+          <form class="form-check">
             <label class="conditions">
-              <input type="checkbox" required />
-              <p class="conditions-text">
-                Соглашаюсь с рассылкой и принимаю
-                <a class="conditions-link link" href="">Условия договора</a>
-              </p>
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                required
+              />
+              <!-- <p class="conditions-text"> -->
+              <span class="check">
+                <svg
+                  class="icon-check"
+                  width="16px"
+                  height="15px"
+                  fill="transparent"
+                >
+                  <use href="./images/icons/symbol-defs.svg#check"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="conditions-link link" href="">Условия договора</a>
+              <!-- </p> -->
             </label>
           </form>
           <button class="button form-btn" type="submit">Отправить</button>
