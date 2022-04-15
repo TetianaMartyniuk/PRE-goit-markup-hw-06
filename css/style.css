@@ -273,6 +273,8 @@ left: 0px;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   cursor: pointer;
 
   transition: background-color var(--anim-hover);
@@ -702,9 +704,10 @@ margin-right: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
+
+  padding: 40px;
   
   width: 528px;
-  height: 581px;
   background-color: var(--main-bcg);
   border-radius: 4px;
 
@@ -741,14 +744,13 @@ margin-right: 10px;
 /* H W 6 */
 
 .form-wrapper {
-  padding: 43px 41px 37px 39px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.form-wrapper h2 {
+.form-wrapper > p {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -760,25 +762,26 @@ margin-right: 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   width: 100%;
 }
 
-.modal-form label {
-  margin-top: 4px;
-}
-
-.modal-form p:not(:first-child) {
+.modal-form:not(:first-child) {
   margin-top: 10px;
 }
 
-.modal-form p:first-child {
+.modal-form:first-child {
   margin-top: 12px;
+}
+
+.modal-form__group {
+  width: 100%;
 }
 
 .contacts-input {
   width: 100%;
   height: 40px;
-  /* margin-top: 4px; */
+  margin-top: 4px;
   padding-left: 42px;
   padding-right: 12px;
 }
@@ -787,11 +790,18 @@ margin-right: 10px;
 
 }
 
-/* Иконки в input */
 .form-field {
-  position: relative;
+  margin-top: 10px;
+  width: 100%;
 }
 
+
+/* Иконки в input */
+
+
+.form__label {
+  position: relative;
+}
 
 .form-icon {
   width: 18px;
@@ -815,12 +825,17 @@ transition: border var(--anim-hover), fill var(--anim-hover);
 }
 
 .form-field:hover .input-border, 
-.form-field:focus .input-border {
+.form-field:focus .input-border,
+.input-border:hover,
+.input-border:focus {
   border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .form-field:hover .form-icon,
-.form-field:focus .form-icon  {
+.form-field:focus .form-icon,
+.input-border:hover + .form-icon,
+.input-border:focus + .form-icon  {
   fill: var(--accent-color);
 }
 
@@ -829,6 +844,7 @@ transition: border var(--anim-hover), fill var(--anim-hover);
 .modal-form .comment {
   margin-top: 10px;
 }
+
 
 .comment-area {
   width: 100%;
@@ -844,10 +860,6 @@ transition: border var(--anim-hover), fill var(--anim-hover);
   transition: border var(--anim-hover);
 }
 
-.input-border:hover,
-.input:focus {
-  border: 1px solid var(--accent-color);
-}
 
 .form-btn {
   width: 200px;
@@ -857,6 +869,8 @@ transition: border var(--anim-hover), fill var(--anim-hover);
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-weight: 700;
 }
 
 
