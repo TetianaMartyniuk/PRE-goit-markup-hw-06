@@ -24,35 +24,46 @@
     <!-- Шапка страницы -->
     <header class="header">
       <div class="container">
-        <nav class="header-nav">
-          <a class="header-logo-link link" href="./index.html"
-            ><span class="header-logo">Web</span>Studio</a
+        <nav class="header__nav">
+          <a class="header__logo-link link" href="./index.html"
+            ><span class="header__logo">Web</span>Studio</a
           >
           <ul class="nav-list list">
-            <li class="nav-list-item">
-              <a class="nav-link link nav-hover" href="./index.html">Студия</a>
+            <li class="nav-list__item">
+              <a
+                class="nav-list__link link nav-list--nav-hover"
+                href="./index.html"
+                >Студия</a
+              >
             </li>
-            <li class="nav-list-item">
-              <a class="nav-link link current" href="./portfolio.html"
+            <li class="nav-list__item">
+              <a class="nav-list__link link current" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="nav-list-item">
-              <a class="nav-link link nav-hover" href="">Контакты</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link link nav-list--nav-hover" href=""
+                >Контакты</a
+              >
             </li>
           </ul>
         </nav>
-        <ul class="header-address-list list">
-          <li class="header-item-mail">
-            <a class="address-link link" href="mailto:info@devstudio.com"
+        <ul class="header__address-list list">
+          <li class="header__item-mail">
+            <a
+              class="header__address-link header__address-link--hover link"
+              href="mailto:info@devstudio.com"
               ><svg class="mail-icon" width="16px" height="12px">
                 <use href="./images/icons/symbol-defs.svg#envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="header-item-phone">
-            <a class="address-link link" href="tel:+380961111111">
+          <li class="header__item-phone">
+            <a
+              class="header__address-link header__address-link--hover link"
+              href="tel:+380961111111"
+            >
               <svg class="smartphone-icon" width="10px" height="16px">
                 <use href="./images/icons/symbol-defs.svg#smartphone"></use>
               </svg>
@@ -68,34 +79,58 @@
       <section class="section container">
         <h1 class="visually-hidden">Our works</h1>
         <ul class="filter-list list">
-          <li class="filter-item">
-            <button class="filter-btn" type="button">Все</button>
+          <li class="filter-list__item">
+            <button
+              class="filter-list__btn filter-list__btn--hover"
+              type="button"
+            >
+              Все
+            </button>
           </li>
-          <li class="filter-item">
-            <button class="filter-btn" type="button">Веб-сайты</button>
+          <li class="filter-list__item">
+            <button
+              class="filter-list__btn filter-list__btn--hover"
+              type="button"
+            >
+              Веб-сайты
+            </button>
           </li>
-          <li class="filter-item">
-            <button class="filter-btn" type="button">Приложения</button>
+          <li class="filter-list__item">
+            <button
+              class="filter-list__btn filter-list__btn--hover"
+              type="button"
+            >
+              Приложения
+            </button>
           </li>
-          <li class="filter-item">
-            <button class="filter-btn" type="button">Дизайн</button>
+          <li class="filter-list__item">
+            <button
+              class="filter-list__btn filter-list__btn--hover"
+              type="button"
+            >
+              Дизайн
+            </button>
           </li>
-          <li class="filter-item">
-            <button class="filter-btn" type="button">Маркетинг</button>
+          <li class="filter-list__item">
+            <button
+              class="filter-list__btn filter-list__btn--hover"
+              type="button"
+            >
+              Маркетинг
+            </button>
           </li>
         </ul>
         <!-- Список карточек работ, пока без ссылок -->
-        <ul class="projects-list list">
-          <li class="projects-card">
-            <a class="project-link link" href="">
+        <ul class="projects list">
+          <li class="projects__card">
+            <a class="projects__link projects__link--hover link" href="">
               <img
-                class="project-pic"
                 src="./images/technokryak.jpg"
                 alt="Екран компьютера с открытой страницей веб-сайта"
                 width="370"
                 height="294"
               />
-              <div class="overlay-wrapper">
+              <div class="overlay--wrapper">
                 <div class="overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -104,22 +139,21 @@
                   </p>
                 </div>
               </div>
-              <div class="project-desc">
-                <h2 class="project-title">Технокряк</h2>
+              <div class="projects__desc">
+                <h2 class="projects__title">Технокряк</h2>
                 <p>Веб-сайт</p>
               </div>
             </a>
           </li>
-          <li class="projects-card">
-            <a class="project-link link" href="">
+          <li class="projects__card">
+            <a class="projects__link projects__link--hover link" href="">
               <img
-                class="project-pic"
                 src="./images/new-orlean-vs-golden-star.jpg"
                 alt="Арт с двумя баскетболистами в игре"
                 width="370"
                 height="294"
               />
-              <div class="overlay-wrapper">
+              <div class="overlay--wrapper">
                 <div class="overlay">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -128,22 +162,23 @@
                   </p>
                 </div>
               </div>
-              <div class="project-desc">
-                <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
+              <div class="projects__desc">
+                <h2 class="projects__title">
+                  Постер New Orlean vs Golden Star
+                </h2>
                 <p>Дизайн</p>
               </div>
             </a>
           </li>
-          <li class="projects-card">
-            <a class="project-link link" href="">
+          <li class="projects__card">
+            <a class="projects__link projects__link--hover link" href="">
               <img
-                class="project-pic"
                 src="./images/seafood-restaurant.jpg"
                 alt="Логотип ресторана"
                 width="370"
                 height="294"
               />
-              <div class="overlay-wrapper">
+              <div class="overlay--wrapper">
                 <div class="overlay">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -152,22 +187,21 @@
                   </p>
                 </div>
               </div>
-              <div class="project-desc">
-                <h2 class="project-title">Ресторан Seafood</h2>
+              <div class="projects__desc">
+                <h2 class="projects__title">Ресторан Seafood</h2>
                 <p>Приложение</p>
               </div>
             </a>
           </li>
-          <li class="projects-card">
-            <a class="project-link link" href="">
+          <li class="projects__card">
+            <a class="projects__link projects__link--hover link" href="">
               <img
-                class="project-pic"
                 src="./images/prime-prj.jpg"
                 alt="Наушники"
                 width="370"
                 height="294"
               />
-              <div class="overlay-wrapper">
+              <div class="overlay--wrapper">
                 <div class="overlay">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -176,22 +210,21 @@
                   </p>
                 </div>
               </div>
-              <div class="project-desc">
-                <h2 class="project-title">Проект Prime</h2>
+              <div class="projects__desc">
+                <h2 class="projects__title">Проект Prime</h2>
                 <p>Маркетинг</p>
               </div>
             </a>
           </li>
-          <li class="projects-card">
-            <a class="project-link link" href="">
+          <li class="projects__card">
+            <a class="projects__link projects__link--hover link" href="">
               <img
-                class="project-pic"
                 src="./images/boxes-prj.jpg"
                 alt="Коробки с логотипами"
                 width="370"
                 height="294"
               />
-              <div class="overlay-wrapper">
+              <div class="overlay--wrapper">
                 <div class="overlay">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -200,22 +233,21 @@
                   </p>
                 </div>
               </div>
-              <div class="project-desc">
-                <h2 class="project-title">Проект Boxes</h2>
+              <div class="projects__desc">
+                <h2 class="projects__title">Проект Boxes</h2>
                 <p>Приложение</p>
               </div>
             </a>
           </li>
-          <li class="projects-card">
-            <a class="project-link link" href="">
+          <li class="projects__card">
+            <a class="projects__link projects__link--hover link" href="">
               <img
-                class="project-pic"
                 src="./images/instipation-has-no-borders.jpg"
                 alt="Екран компьютера с открытой страницей веб-сайта"
                 width="370"
                 height="294"
               />
-              <div class="overlay-wrapper">
+              <div class="overlay--wrapper">
                 <div class="overlay">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -224,22 +256,21 @@
                   </p>
                 </div>
               </div>
-              <div class="project-desc">
-                <h2 class="project-title">Inspiration has no Borders</h2>
+              <div class="projects__desc">
+                <h2 class="projects__title">Inspiration has no Borders</h2>
                 <p>Веб-сайт</p>
               </div>
             </a>
           </li>
-          <li class="projects-card">
-            <a class="project-link link" href="">
+          <li class="projects__card">
+            <a class="projects__link projects__link--hover link" href="">
               <img
-                class="project-pic"
                 src="./images/limited-edition.jpg"
                 alt="Разворот журнала с фотографиями"
                 width="370"
                 height="294"
               />
-              <div class="overlay-wrapper">
+              <div class="overlay--wrapper">
                 <div class="overlay">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -248,22 +279,21 @@
                   </p>
                 </div>
               </div>
-              <div class="project-desc">
-                <h2 class="project-title">Издание Limited Edition</h2>
+              <div class="projects__desc">
+                <h2 class="projects__title">Издание Limited Edition</h2>
                 <p>Дизайн</p>
               </div>
             </a>
           </li>
-          <li class="projects-card">
-            <a class="project-link link" href="">
+          <li class="projects__card">
+            <a class="projects__link projects__link--hover link" href="">
               <img
-                class="project-pic"
                 src="./images/lab-prj.jpg"
                 alt="Этикетка с логотипом"
                 width="370"
                 height="294"
               />
-              <div class="overlay-wrapper">
+              <div class="overlay--wrapper">
                 <div class="overlay">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -272,22 +302,21 @@
                   </p>
                 </div>
               </div>
-              <div class="project-desc">
-                <h2 class="project-title">Проект LAB</h2>
+              <div class="projects__desc">
+                <h2 class="projects__title">Проект LAB</h2>
                 <p>Маркетинг</p>
               </div>
             </a>
           </li>
-          <li class="projects-card">
-            <a class="project-link link" href="">
+          <li class="projects__card">
+            <a class="projects__link projects__link--hover link" href="">
               <img
-                class="project-pic"
                 src="./images/growing-business.jpg"
                 alt="Главная страница сайта на екране ноутбука во время работы пользователя"
                 width="370"
                 height="294"
               />
-              <div class="overlay-wrapper">
+              <div class="overlay--wrapper">
                 <div class="overlay">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -296,8 +325,8 @@
                   </p>
                 </div>
               </div>
-              <div class="project-desc">
-                <h2 class="project-title">Growing Business</h2>
+              <div class="projects__desc">
+                <h2 class="projects__title">Growing Business</h2>
                 <p>Приложение</p>
               </div>
             </a>
@@ -309,61 +338,63 @@
     <footer class="footer">
       <div class="container">
         <div>
-          <a class="footer-logo-link link" href="./index.html"
-            ><span class="footer-logo">Web</span>Studio</a
+          <a class="footer__logo-link link" href="./index.html"
+            ><span class="footer__logo">Web</span>Studio</a
           >
-          <address class="footer-address">
-            <ul class="footer-address-list list">
-              <li class="footer-item">
+          <address class="footer__address">
+            <ul class="footer__address-list list">
+              <li class="footer__item">
                 <a
-                  class="footer-address-link link"
+                  class="footer__address-link link"
                   href="https://goo.gl/maps/t5yJXCLs88y3g8ho9"
                   target="_blank"
                   rel="noopener noreferrer"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="footer-item">
+              <li class="footer__item">
                 <a
-                  class="footer-address-mail link"
+                  class="footer__mail-link footer__mail-link--hover link"
                   href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="footer-item">
-                <a class="footer-address-phone link" href="+380991111111"
+              <li class="footer__item">
+                <a
+                  class="footer__phone-link footer__phone-link--hover link"
+                  href="+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-socials">
+        <div class="socials">
           <p>присоединяйтесь</p>
-          <ul class="social-list-footer list">
-            <li class="social-items-footer">
-              <a href="" class="social-icon-footer link">
+          <ul class="socials__list list">
+            <li class="socials__items">
+              <a href="" class="socials__icon socials__icon--hover link">
                 <svg width="20px" height="20px">
                   <use href="./images/icons/symbol-defs.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-items-footer">
-              <a href="" class="social-icon-footer link">
+            <li class="socials__items">
+              <a href="" class="socials__icon socials__icon--hover link">
                 <svg width="20px" height="20px">
                   <use href="./images/icons/symbol-defs.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-items-footer">
-              <a href="" class="social-icon-footer link"
+            <li class="socials__items">
+              <a href="" class="socials__icon socials__icon--hover link"
                 ><svg width="20px" height="20px">
                   <use href="./images/icons/symbol-defs.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-items-footer">
-              <a href="" class="social-icon-footer link"
+            <li class="socials__items">
+              <a href="" class="socials__icon socials__icon--hover link"
                 ><svg width="20px" height="20px">
                   <use href="./images/icons/symbol-defs.svg#linkedin"></use>
                 </svg>
@@ -371,24 +402,23 @@
             </li>
           </ul>
         </div>
-        <!-- H W 6 -->
         <div class="newsletter">
           <p>Подпишитесь на рассылку</p>
           <form
-            class="newsletter-form"
+            class="newsletter__form"
             name="newsletter-form"
             autocomplete="on"
           >
             <label>
               <input
-                class="email-input"
+                class="newsletter__email-input"
                 name="email"
                 type="email"
                 placeholder="Email"
                 required
               />
             </label>
-            <button class="subscribe-btn button" type="submit">
+            <button class="newsletter__btn button" type="submit">
               Подписаться
               <svg class="send-icon" width="24px" height="24px">
                 <use href="./images/icons/symbol-defs.svg#icon-send"></use>
@@ -396,7 +426,6 @@
             </button>
           </form>
         </div>
-        <!-- H W 6 end -->
       </div>
     </footer>
   </body>
